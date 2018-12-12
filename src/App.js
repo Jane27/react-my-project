@@ -4,10 +4,6 @@ import './App.css';
 
 import Welcome from './welcome';
 
-import NameCard from './components/NameCard'
-
-const tags=['nice', 'beautiful'];
-
 class App extends Component {
   render() {
     return (
@@ -27,7 +23,6 @@ class App extends Component {
           </a>
         </header> */}
         <Welcome />
-        <NameCard name='jane' number = {21232323} isHuman = {true} tags={tags}/>
       </div>
     );
   }
