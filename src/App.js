@@ -6,6 +6,8 @@ import Welcome from './welcome';
 
 import NameCard from './components/NameCard'
 
+import LikesButton from './components/LikesButton'
+
 const tags=['nice', 'beautiful'];
 
 class App extends Component {
@@ -28,6 +30,7 @@ class App extends Component {
         </header> */}
         <Welcome />
         <NameCard name='jane' number = {21232323} isHuman = {true} tags={tags}/>
+        <LikesButton/>>
       </div>
     );
   }
