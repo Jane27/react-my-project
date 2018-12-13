@@ -4,13 +4,15 @@ import './App.css';
 
 import Welcome from './welcome';
 
-import NameCard from './components/NameCard'
+// import NameCard from './components/NameCard'
 
-import LikesButton from './components/LikesButton'
+// import LikesButton from './components/LikesButton'
 
-import DigitalClock from './components/DigitalClock';
+// import DigitalClock from './components/DigitalClock';
 
 import CommentBox from './components/CommentBox';
+
+import CommentList from './components/CommentList';
 
 const tags=['nice', 'beautiful'];
 
@@ -39,11 +41,12 @@ class App extends Component {
           </a>
         </header> */}
         <Welcome />
-        <NameCard name='jane' number = {21232323} isHuman = {true} tags={tags}/>
+        {/* <NameCard name='jane' number = {21232323} isHuman = {true} tags={tags}/>
         <LikesButton/>
         {this.state.showClock && <DigitalClock />}
-        <button className="btn btn-primary" onClick={()=>{this.setState({showClock: !this.state.showClock})}}>{this.state.showClock ? "Hide Clock": "Show Clock"}</button>
+        <button className="btn btn-primary" onClick={()=>{this.setState({showClock: !this.state.showClock})}}>{this.state.showClock ? "Hide Clock": "Show Clock"}</button> */}
         <CommentBox/>
+        <CommentList />
       </div>
 
 
