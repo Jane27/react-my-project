@@ -13,6 +13,12 @@ import DigitalClock from './components/DigitalClock';
 const tags=['nice', 'beautiful'];
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showClock: true
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -33,7 +39,8 @@ class App extends Component {
         <Welcome />
         <NameCard name='jane' number = {21232323} isHuman = {true} tags={tags}/>
         <LikesButton/>
-        <DigitalClock />
+        {this.state.showClock && <DigitalClock />}
+        <button className="btn btn-primary" onClick={()=>{this.setState({showClock: !this.state.showClock})}}>{this.state.showClock ? "Hide Clock": "Show Clock"}</button>
       </div>
     );
   }
