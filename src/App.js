@@ -10,6 +10,8 @@ import LikesButton from './components/LikesButton'
 
 import DigitalClock from './components/DigitalClock';
 
+import CommentBox from './components/CommentBox';
+
 const tags=['nice', 'beautiful'];
 
 class App extends Component {
@@ -41,7 +43,10 @@ class App extends Component {
         <LikesButton/>
         {this.state.showClock && <DigitalClock />}
         <button className="btn btn-primary" onClick={()=>{this.setState({showClock: !this.state.showClock})}}>{this.state.showClock ? "Hide Clock": "Show Clock"}</button>
+        <CommentBox/>
       </div>
+
+
     );
   }
 }
