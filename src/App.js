@@ -10,11 +10,12 @@ import Welcome from './welcome';
 
 // import DigitalClock from './components/DigitalClock';
 
-import CommentBox from './components/CommentBox';
+// import CommentBox from './components/CommentBox';
 
-import CommentList from './components/CommentList';
+// import Comments from './components/Comments';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
-const tags=['nice', 'beautiful'];
+// const tags=['nice', 'beautiful'];
 
 class App extends Component {
   constructor(props) {
@@ -45,8 +46,9 @@ class App extends Component {
         <LikesButton/>
         {this.state.showClock && <DigitalClock />}
         <button className="btn btn-primary" onClick={()=>{this.setState({showClock: !this.state.showClock})}}>{this.state.showClock ? "Hide Clock": "Show Clock"}</button> */}
-        <CommentBox/>
-        <CommentList />
+        {/* <CommentBox/>
+        <Comments /> */}
+        <ThemeSwitcher/>
       </div>
 
 
